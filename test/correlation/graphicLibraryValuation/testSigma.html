@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic sigma.js example</title>
+  <style>
+    #webgl {
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 50%;
+      color: #fff;
+      background: #000;
+      position: absolute;
+    }
+    #container {
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      right: 0;
+      color: #000;
+      background: #fff;
+      position: absolute;
+    }
+    .label {
+      position: relative;
+      top: 10px;
+      left: 10px;
+      z-index: 1;
+      font-family: sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+      <div class="label" onclick="setCamera('n1')">node 1</div>
+      <div class="label" onclick="setCamera('n2')">node 2</div>
+      <div class="label" id="graph-btn">fullscreen</div>
+
+  </div>
+
+    <div id="webgl">
+    <div class="label">WebGL renderer</div>
+  </div>
+
+  <script src="sigma.min.js"></script>
+  
+  <script src="sigma.plugins.dragNodes.min.js"></script>
+  <script src="sigma.plugins.animate.min.js"></script>
+  <script src="sigma.layout.forceAtlas2.min.js"></script>
+  <script src="sigma.plugins.fullScreen.js"></script>
+  <script src="sigma.plugins.locate.js"></script>
+  <script src="sigma.plugins.activeState.js"></script>
+  
+  <script src="sigma.plugins.select.js"></script>
+  
+
+  <script>
+
+// abaixo renderer mandatorio para exibicao de imagens nos nodes
+sigma.utils.pkg('sigma.canvas.nodes');
+sigma.canvas.nodes.image = (function() {
+    var _cache = {},
+        _loading = {},
+        _callbacks = {};
+    // Return the renderer itself:
+    var renderer = function(node, context, settings) {
+        var args = arguments,
+            prefix = settings('prefix') || '',
+            size = node[prefix + 'size'],
+            color = node.color || settings('defaultNodeColor'),
+            url = node.url;
+        if (_cache[url]) {
+            context.save();
+            // Draw the clipping disc:
+            context.beginPath();
+            context.arc(
+                node[prefix + 'x'],
+                node[prefix + 'y'],
+                node[prefix + 'size'],
+                0,
+                Math.PI * 2,
+                true
+            );
+            context.closePath();
+            context.clip();
+            // Draw the image
+            context.drawImage(
+                _cache[url],
+                node[prefix + 'x'] - size,
+                node[prefix + 'y'] - size,
+                2 * size,
+                2 * size
+            );
+            // Quit the "clipping mode":
+            context.restore();
+            // Draw the border:
+            context.beginPath();
+            context.arc(
+                node[prefix + 'x'],
+                node[prefix + 'y'],
+                node[prefix + 'size'],
+                0,
+                Math.PI * 2,
+                true
+            );
+            context.lineWidth = size / 5;
+            context.strokeStyle = node.color || settings('defaultNodeColor');
+            context.stroke();
+        } else {
+            sigma.canvas.nodes.image.cache(url);
+            sigma.canvas.nodes.def.apply(
+                sigma.canvas.nodes,
+                args
+            );
+        }
+    };
+    // Let's add a public method to cache images, to make it possible to
+    // preload images before the initial rendering:
+    renderer.cache = function(url, callback) {
+        if (callback)
+            _callbacks[url] = callback;
+        if (_loading[url])
+            return;
+        var img = new Image();
+        img.onload = function() {
+            _loading[url] = false;
+            _cache[url] = img;
+            if (_callbacks[url]) {
+                _callbacks[url].call(this, img);
+                delete _callbacks[url];
+            }
+        };
+        _loading[url] = true;
+        img.src = url;
+    };
+    return renderer;
+})();
+
+var nodeRadius = 10,
+    inertia = 0.8,
+      springForce = 0.01,
+      springLength = 50,
+      maxDisplacement = 15,
+      gravity = 1.5;
+
+/**
+   * CUSTOM PHYSICS LAYOUT:
+   * **********************
+   */
+  sigma.classes.graph.addMethod('computePhysics', function() {
+    var i,
+        j,
+        l = this.nodesArray.length,
+        s,
+        t,
+        dX,
+        dY,
+        d,
+        v;
+    for (i = 0; i < l; i++) {
+      s = this.nodesArray[i];
+      s.dX *= inertia;
+      s.dY *= inertia;
+      s.dY += gravity;
+      for (j = i + 1; j < l; j++) {
+        t = this.nodesArray[j];
+        dX = s.x - t.x;
+        dY = s.y - t.y;
+        d = Math.sqrt(dX * dX + dY * dY);
+        v = ((d < 2 * nodeRadius) ? (2 * nodeRadius - d) / d / 2 : 0) -
+          ((this.allNeighborsIndex[s.id] || {})[t.id] ? springForce * (d - springLength) : 0);
+        t.dX -= v * dX;
+        t.dY -= v * dY;
+        s.dX += v * dX;
+        s.dY += v * dY;
+      }
+    }
+    for (i = 0; i < l; i++) {
+      s = this.nodesArray[i];
+      s.dX = Math.max(Math.min(s.dX, maxDisplacement), -maxDisplacement);
+      s.dY = Math.max(Math.min(s.dY, maxDisplacement), -maxDisplacement);
+      s.x += s.dX;
+      s.y += s.dY;
+      // Collision with the ground:
+      s.y = Math.min(-nodeRadius, s.y);
+    }
+  });
+
+
+var images = [
+      'network/company.svg',
+      'network/person.svg',
+      'network/logo.png'
+      ];
+var loaded = 0;
+
+
+
+
+    // Let's first initialize sigma:
+    var s = new sigma('container');
+
+    var i,
+    s,
+    N = 50,
+    E = 100,
+    g = {
+      nodes: [],
+      edges: []
+    };
+// Generate a random graph:
+for (i = 0; i < N; i++)
+  g.nodes.push({
+    id: 'n' + i,
+    label: 'Node ' + i,
+    x: Math.random(),
+    y: Math.random(),
+    size: Math.random(),
+    color: '#666',
+    type: 'image',
+    url: i % 2 == 0 ? 'network/logo.png' : 'network/facebook.svg'
+  });
+for (i = 0; i < E; i++)
+  g.edges.push({
+    id: 'e' + i,
+    source: 'n' + (Math.random() * N | 0),
+    target: 'n' + (Math.random() * N | 0),
+    size: Math.random(),
+    color: '#ccc'
+  });
+// Instantiate sigma:
+/*  s = new sigma({
+  graph: g,
+  container: 'container',
+  renderer: { type: 'canvas'}
+});  */
+/* s = new sigma({
+  graph: g,
+  renderer: { container: document.getElementById('container'), type: 'canvas'}
+}); */
+
+var dom;
+
+images.forEach(function(url) {
+    sigma.canvas.nodes.image.cache(
+        url,
+        function() {
+            if (++loaded === images.length) {
+                s = new sigma({
+                    graph: g,
+                    renderer: {
+                    // IMPORTANT:
+                    // This works only with the canvas renderer, so the
+                    // renderer type set as "canvas" is necessary here.
+                        container: document.getElementById('container'),
+                        type: 'canvas'
+                    },
+                    settings: {
+                        autoRescale: true,
+                        maxNodeSize: 20,
+                        defaultLabelColor: '#000000',
+                        labelColor: '#000000',
+                        enableEdgeHovering: false,
+                        animationsTime: 3000,
+                        nodeHoverBorderSize: 2,
+                        defaultNodeHoverBorderColor: '#fff',
+                        
+                    } 
+                }); 
+
+                // Initialize the activeState plugin used for selection
+                var activeState = sigma.plugins.activeState(s);
+                /* activeState.setNodesBy(function(n) {
+                return this.degree('n1') === 0;
+                }); */
+
+                //s.graph.computePhysics();
+                // https://github.com/jacomyal/sigma.js/tree/master/plugins/sigma.layout.forceAtlas2
+                s.startForceAtlas2({
+                    "gravity": 1, 
+                    outboundAttractionDistribution : true,
+                    edgeWeightInfluence : 1,
+                    startingIterations: 3,
+                    barnesHutOptimize: false
+                }
+                );
+                dom = document.querySelector('#container canvas:last-child');
+                dom.addEventListener('click', function(e) {
+                    //console.log("click", e);
+                });
+
+                s.bind('clickNode', function(event) {
+                    console.log("click", event);
+                });
+
+                sigma.plugins.fullScreen({
+                    container: 'container',
+                    btnId : 'graph-btn'
+                    });
+
+
+                //setTimeout(function() { s.stopForceAtlas2(); }, 10000)
+                let cam = s.addCamera();
+                /* s.addRenderer({
+                    container: document.getElementById("webgl"),
+                    camera: cam,
+                    
+                }); */
+                sigma.plugins.dragNodes(s, s.renderers[0]);  
+                var step = 0;
+                
+            }
+        }
+    );
+});
+
+/**
+ * set camera to the right position
+ * 
+**/
+ function setCamera(nodeID){
+    console.log("sigma", s);
+
+    let n = s.graph.nodes(nodeID);
+    console.log(nodeID);
+    sigma.misc.animation.camera(
+        s.camera, 
+        {
+            x: n[s.camera.readPrefix + 'x'], 
+            y: n[s.camera.readPrefix + 'y'],
+            ratio: 0.4
+        }, 
+        { duration: s.settings('animationsTime') }
+        );
+
+
+/*     s.graph.nodes().forEach(function(n) {
+        if(n.id === node){
+            console.log("node found", n);
+            s.camera.goTo({
+                x: n["read_cam0:x"],
+                y: n["read_cam0:y"],
+                angle: 0,
+                ratio: 0.4
+            });
+        }
+    }); */
+
+
+}
+
+  </script>
+</body>
+</html>

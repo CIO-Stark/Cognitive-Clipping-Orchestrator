@@ -1,0 +1,71 @@
+[
+        {
+                "entity": "ibm",
+                "data": [
+                        {
+                                "_id": "id-1-twitter-ibm",
+                                "_rev": "1-ca6641f13efbedc22a665e8f551d126d",
+                                "source": "twitter",
+                                "date": "Wed Jul 19 18:54:01 +0000 2017",
+                                "author": "Doreen Lipka",
+                                "link": "https://twitter.com/DoreenLipka/status/887747370255085569",
+                                "text": "EVRY and IBM partner to accelerate cloud adoption  ",
+                                "lang": "en",
+                                "english": "EVRY and IBM partner to accelerate cloud adoption  ",
+                                "portuguese": "EVRY e parceiro IBM para acelerar a adoção de nuvem  ",
+                                "sentiment": {
+                                        "score": 0,
+                                        "label": "neutral"
+                                },
+                                "categories": [
+                                        {
+                                                "score": 0.715995,
+                                                "label": "/technology and computing"
+                                        },
+                                        {
+                                                "score": 0.134027,
+                                                "label": "/health and fitness/aging"
+                                        },
+                                        {
+                                                "score": 0.110831,
+                                                "label": "/family and parenting/adoption"
+                                        }
+                                ],
+                                "relations": [
+                                        {
+                                                "type": "employedBy",
+                                                "sentence": "EVRY and IBM partner to accelerate cloud adoption",
+                                                "score": 0.709869,
+                                                "arguments": [
+                                                        {
+                                                                "text": "partner",
+                                                                "entities": [
+                                                                        {
+                                                                                "type": "Person",
+                                                                                "text": "partner"
+                                                                        }
+                                                                ]
+                                                        },
+                                                        {
+                                                                "text": "IBM-relevance",
+                                                                "entities": [
+                                                                        {
+                                                                                "type": "Organization",
+                                                                                "text": "IBM-relevance"
+                                                                        }
+                                                                ]
+                                                        }
+                                                ]
+                                        }
+                                ],
+                                "keywords": [
+                                        {
+                                                "text": "parceiro ibm",
+                                                "relevance": 0.993438
+                                        }
+                                ],
+                                "contextos": " Tecnologia e computação em saúde e fitness envelhecendo família e maternidade de adoção"
+                              
+                        }]
+        }
+]

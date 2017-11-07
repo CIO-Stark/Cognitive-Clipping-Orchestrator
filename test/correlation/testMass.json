@@ -1,0 +1,1113 @@
+[
+        {
+                "entity": "ibm",
+                "data": [
+                        {
+                                "_id": "id-1-twitter-ibm",
+                                "_rev": "1-ca6641f13efbedc22a665e8f551d126d",
+                                "source": "twitter",
+                                "date": "Wed Jul 19 18:54:01 +0000 2017",
+                                "author": "Doreen Lipka",
+                                "link": "https://twitter.com/DoreenLipka/status/887747370255085569",
+                                "text": "EVRY and IBM partner to accelerate cloud adoption  ",
+                                "lang": "en",
+                                "english": "EVRY and IBM partner to accelerate cloud adoption  ",
+                                "portuguese": "EVRY e parceiro IBM para acelerar a adoção de nuvem  ",
+                                "sentiment": {
+                                        "score": 90,
+                                        "label": "positive"
+                                },
+                                "categories": [
+                                        {
+                                                "score": 0.715995,
+                                                "label": "/technology and computing"
+                                        },
+                                        {
+                                                "score": 0.134027,
+                                                "label": "/health and fitness/aging"
+                                        },
+                                        {
+                                                "score": 0.110831,
+                                                "label": "/family and parenting/adoption"
+                                        }
+                                ],
+                                "relations": [
+                                        {
+                                                "type": "employedBy",
+                                                "sentence": "EVRY and IBM partner to accelerate cloud adoption",
+                                                "score": 0.709869,
+                                                "arguments": [
+                                                        {
+                                                                "text": "partner",
+                                                                "entities": [
+                                                                        {
+                                                                                "type": "Person",
+                                                                                "text": "partner"
+                                                                        }
+                                                                ]
+                                                        },
+                                                        {
+                                                                "text": "IBM-relevance",
+                                                                "entities": [
+                                                                        {
+                                                                                "type": "Organization",
+                                                                                "text": "IBM-relevance"
+                                                                        }
+                                                                ]
+                                                        }
+                                                ]
+                                        }
+                                ],
+                                "keywords": [
+                                        {
+                                                "text": "parceiro ibm",
+                                                "relevance": 0.993438
+                                        }
+                                ],
+                                "contextos": " Tecnologia e computação em saúde e fitness envelhecendo família e maternidade de adoção"
+                        },
+                        {
+                                "_id": "id-2-twitter-ibm",
+                                "_rev": "1-44fb3d8d50236d33eff369833a31688a",
+                                "source": "twitter",
+                                "date": "Wed Jul 19 18:53:59 +0000 2017",
+                                "author": "David Tuchman",
+                                "link": "https://twitter.com/TuckonSports/status/887747362466054144",
+                                "text": "@DavidSeaburg thoughts on IBM? Oversold? Nice dividend...bounce back or ???",
+                                "lang": "en",
+                                "english": "@DavidSeaburg thoughts on IBM? Oversold? Nice dividend...bounce back or ???",
+                                "portuguese": "Pensamentos @DavidSeaburg no IBM? Exagerei? Bom ... se recuperar de ou.",
+                                "sentiment": {
+                                        "score": -0.52829,
+                                        "label": "negative"
+                                },
+                                "categories": [
+                                        {
+                                                "score": 0.844226,
+                                                "label": "/finance/investing/stocks"
+                                        },
+                                        {
+                                                "score": 0.496079,
+                                                "label": "/business and industrial/company/bankruptcy"
+                                        },
+                                        {
+                                                "score": 0.0881095,
+                                                "label": "/business and industrial"
+                                        }
+                                ],
+                                "relations": [
+                                        {
+                                                "type": "employedBy",
+                                                "sentence": "IBM Scientists Observe Elusive Gravitational Effect in Solid-State Physics   via #IBM #Cloud",
+                                                "score": 0.873658,
+                                                "arguments": [
+                                                        {
+                                                                "text": "Scientists",
+                                                                "entities": [
+                                                                        {
+                                                                                "type": "Person",
+                                                                                "text": "Scientists"
+                                                                        }
+                                                                ]
+                                                        },
+                                                        {
+                                                                "text": "IBM-relevance",
+                                                                "entities": [
+                                                                        {
+                                                                                "type": "Organization",
+                                                                                "text": "IBM-relevance"
+                                                                        }
+                                                                ]
+                                                        }
+                                                ]
+                                        }
+                                ],
+                                "keywords": [
+                                        {
+                                                "text": "Pensamentos @DavidSeaburg",
+                                                "relevance": 0.983718
+                                        },
+                                        {
+                                                "text": "parceiro ibm",
+                                                "relevance": 0.50
+                                        }
+                                ],
+                                "contextos": " As ações da empresa de investimento e de negócios da falência da empresa industrial e industrial"
+                        },
+                        {
+                                "_id": "03d4a116165197e70474524bb1fce7e8",
+                                "_rev": "1-f551a68d9935bfa58c61d39ee0871706",
+                                "source": "twitter",
+                                "date": "Wed Jul 19 18:53:52 +0000 2017",
+                                "author": "Dipudgo",
+                                "link": "https://twitter.com/Dipudgo/status/887747332573347840",
+                                "text": "RT @mbarnardca: Climate research peeps! IBM + Weather Co offering grants and computing worth $$$. Consider applying. #ClimateAction https:/…",
+                                "lang": "en",
+                                "english": "RT @mbarnardca: Climate research peeps! IBM + Weather Co offering grants and computing worth $$$. Consider applying. #ClimateAction https:/…",
+                                "portuguese": "@mbarnardca RT: Clima pessoal de investigação. IBM + Weather Co oferece bolsas e computação vale $$$. Considere aplicar. #ClimateAction https:/ ...",
+                                "sentiment": {
+                                        "score": 0.116891,
+                                        "label": "positive"
+                                },
+                                "categories": [
+                                        {
+                                                "score": 0.496514,
+                                                "label": "/technology and computing"
+                                        },
+                                        {
+                                                "score": 0.359632,
+                                                "label": "/science"
+                                        },
+                                        {
+                                                "score": 0.357352,
+                                                "label": "/food and drink/food/candy and sweets"
+                                        }
+                                ],
+                                "relations": [],
+                                "keywords": [
+                                        {
+                                                "text": "Weather Co",
+                                                "relevance": 0.924456
+                                        }
+                                ],
+                                "contextos": " Tecnologia e computação científica de comida e bebida doce comida e doces"
+                        },
+                        {
+                                "_id": "03d4a116165197e70474524bb1fcefbd",
+                                "_rev": "1-eea2e784763d14f5349a99ae4986bd2e",
+                                "source": "twitter",
+                                "date": "Wed Jul 19 18:53:38 +0000 2017",
+                                "author": "Whitesoft",
+                                "link": "https://twitter.com/WhitesoftNews/status/887747276000702464",
+                                "text": "RT @milcent: New IBM Connections 6.0 mobile app from IBM Collaboration Solutions ",
+                                "lang": "en",
+                                "english": "RT @milcent: New IBM Connections 6.0 mobile app from IBM Collaboration Solutions ",
+                                "portuguese": "RT @milcent: Conexões Novo IBM 6,0 aplicativo móvel do IBM Collaboration Solutions ",
+                                "sentiment": {
+                                        "score": 0,
+                                        "label": "neutral"
+                                },
+                                "categories": [
+                                        {
+                                                "score": 0.686818,
+                                                "label": "/business and industrial/business software"
+                                        },
+                                        {
+                                                "score": 0.470405,
+                                                "label": "/technology and computing"
+                                        },
+                                        {
+                                                "score": 0.296988,
+                                                "label": "/business and industrial"
+                                        }
+                                ],
+                                "relations": [],
+                                "keywords": [
+                                        {
+                                                "text": "IBM Collaboration Solutions",
+                                                "relevance": 0.925083
+                                        },
+                                        {
+                                                "text": "Conexões Novo IBM",
+                                                "relevance": 0.919637
+                                        }
+                                ],
+                                "contextos": " Negócios e tecnologia de software de negócios industriais e de negócios de computação e industrial"
+                        },
+                        {
+                                "_id": "03d4a116165197e70474524bb1fcfd71",
+                                "_rev": "1-1b19b5a452b68867b939d3122869529a",
+                                "source": "twitter",
+                                "date": "Wed Jul 19 18:53:28 +0000 2017",
+                                "author": "Ernest M. Edsel",
+                                "link": "https://twitter.com/ErnestMEdsel1/status/887747232522317824",
+                                "text": "ONE HIRED JUST LIKE MILLIONS HIRED AND NO ONE FIRED/SHIPPED 2 BOMBAY!!!! LOVE THE $IBM EXTRAPOLATION. ONE HIRED =… ",
+                                "lang": "en",
+                                "english": "ONE HIRED JUST LIKE MILLIONS HIRED AND NO ONE FIRED/SHIPPED 2 BOMBAY!!!! LOVE THE $IBM EXTRAPOLATION. ONE HIRED =… ",
+                                "portuguese": "HIRED APENAS UM LIKE milhões contratou E NÃO UM FIRED/SHIPPED 2 SÃO PAULO! !!! AMOR DE $IBM EXTRAPOLATION. O contratado = ... ",
+                                "sentiment": {
+                                        "score": 0.137907,
+                                        "label": "positive"
+                                },
+                                "categories": [
+                                        {
+                                                "score": 0.999887,
+                                                "label": "/science"
+                                        },
+                                        {
+                                                "score": 0.0139967,
+                                                "label": "/technology and computing"
+                                        },
+                                        {
+                                                "score": 0.000700278,
+                                                "label": "/art and entertainment/books and literature/magazines"
+                                        }
+                                ],
+                                "relations": [],
+                                "keywords": [
+                                        {
+                                                "text": "HIRED APENAS UM",
+                                                "relevance": 0.972607
+                                        }
+                                ],
+                                "contextos": " Tecnologia ciência e arte de computação e entretenimento livros e revistas de literatura"
+                        },
+                        {
+                                "_id": "03d4a116165197e70474524bb1fd086c",
+                                "_rev": "1-d8902b84fbf8aca092930498774a19e9",
+                                "source": "twitter",
+                                "date": "Wed Jul 19 18:53:23 +0000 2017",
+                                "author": "Dr. Freeze",
+                                "link": "https://twitter.com/jimfreeze/status/887747210875744256",
+                                "text": "RT @ElixirConf: Did you know that &gt; 500 companies have attended @ElixirConf since 2014!\nSome notables: Amazon, IBM, Google, Microsoft, Netf…",
+                                "lang": "en",
+                                "english": "RT @ElixirConf: Did you know that &gt; 500 companies have attended @ElixirConf since 2014!\nSome notables: Amazon, IBM, Google, Microsoft, Netf…",
+                                "portuguese": "@ElixirConf RT: Você sabia que &gt; 500 empresas têm assistido @ElixirConf desde 2014!\nAlguns notáveis: Amazon, IBM, Google, Microsoft, Netf ...",
+                                "sentiment": {
+                                        "score": 0,
+                                        "label": "neutral"
+                                },
+                                "categories": [
+                                        {
+                                                "score": 0.387016,
+                                                "label": "/technology and computing/software"
+                                        },
+                                        {
+                                                "score": 0.370524,
+                                                "label": "/education/graduate school/college"
+                                        },
+                                        {
+                                                "score": 0.338922,
+                                                "label": "/technology and computing/operating systems/windows"
+                                        }
+                                ],
+                                "relations": [
+                                        {
+                                                "type": "managerOf",
+                                                "sentence": "RT @ElixirConf: Did you know that &gt; 500 companies have attended @ElixirConf since 2014!",
+                                                "score": 0.432417,
+                                                "arguments": [
+                                                        {
+                                                                "text": "&gt;",
+                                                                "entities": [
+                                                                        {
+                                                                                "type": "Person",
+                                                                                "text": "&gt;"
+                                                                        }
+                                                                ]
+                                                        },
+                                                        {
+                                                                "text": "companies",
+                                                                "entities": [
+                                                                        {
+                                                                                "type": "Organization",
+                                                                                "text": "companies"
+                                                                        }
+                                                                ]
+                                                        }
+                                                ]
+                                        }
+                                ],
+                                "keywords": [],
+                                "contextos": " Tecnologia e computação de educação se formou na escola de faculdade de tecnologia e computação em sistemas operacionais Windows"
+                        },
+                        {
+                                "_id": "03d4a116165197e70474524bb1fd103c",
+                                "_rev": "1-c44dfe5efbd0d4b88cd6c4aeb52b6e5f",
+                                "source": "twitter",
+                                "date": "Wed Jul 19 18:53:21 +0000 2017",
+                                "author": "Tech L0G",
+                                "link": "https://twitter.com/TechL0G/status/887747202566770688",
+                                "text": "#Tech lifts Nasdaq, S&amp;P to record; IBM weighs on Dow | Reuters  Cough #StockMarket #tech_news #cyberrisk",
+                                "lang": "en",
+                                "english": "#Tech lifts Nasdaq, S&amp;P to record; IBM weighs on Dow | Reuters  Cough #StockMarket #tech_news #cyberrisk",
+                                "portuguese": "#Tech eleva Nasdaq, S &amp; P para registro; IBM pesa sobre Dow Jones | Reuters Tosse #StockMarket #tech_news #cyberrisk",
+                                "sentiment": {
+                                        "score": -0.575332,
+                                        "label": "negative"
+                                },
+                                "categories": [
+                                        {
+                                                "score": 0.799996,
+                                                "label": "/finance/investing/stocks"
+                                        },
+                                        {
+                                                "score": 0.250825,
+                                                "label": "/news"
+                                        },
+                                        {
+                                                "score": 0.140006,
+                                                "label": "/business and industrial"
+                                        }
+                                ],
+                                "relations": [],
+                                "keywords": [
+                                        {
+                                                "text": "Reuters Tosse #StockMarket",
+                                                "relevance": 0.975117
+                                        },
+                                        {
+                                                "text": "IBM pesa",
+                                                "relevance": 0.762271
+                                        }
+                                ],
+                                "contextos": " Os estoques de investimento financeiro notícias de negócios e industriais"
+                        },
+                        {
+                                "_id": "03d4a116165197e70474524bb1fd1474",
+                                "_rev": "1-7607f85ad9dc6bd96e45ce0ab799a5f6",
+                                "source": "twitter",
+                                "date": "Wed Jul 19 18:53:21 +0000 2017",
+                                "author": "Fabián R. Breschi",
+                                "link": "https://twitter.com/fabianbreschi/status/887747203032244224",
+                                "text": "IBM Scientists Observe Elusive Gravitational Effect in Solid-State Physics   via #IBM #Cloud",
+                                "lang": "en",
+                                "english": "IBM Scientists Observe Elusive Gravitational Effect in Solid-State Physics   via #IBM #Cloud",
+                                "portuguese": "Cientistas da IBM Observe Esquivo A Efeito em Física do Estado Sólido via #IBM #Cloud",
+                                "sentiment": {
+                                        "score": 0,
+                                        "label": "neutral"
+                                },
+                                "categories": [
+                                        {
+                                                "score": 0.704703,
+                                                "label": "/science/physics"
+                                        },
+                                        {
+                                                "score": 0.235118,
+                                                "label": "/technology and computing"
+                                        },
+                                        {
+                                                "score": 0.126293,
+                                                "label": "/technology and computing/consumer electronics/camera and photo equipment/telescopes"
+                                        }
+                                ],
+                                "relations": [
+                                        {
+                                                "type": "employedBy",
+                                                "sentence": "IBM Scientists Observe Elusive Gravitational Effect in Solid-State Physics   via #IBM #Cloud",
+                                                "score": 0.873658,
+                                                "arguments": [
+                                                        {
+                                                                "text": "Scientists",
+                                                                "entities": [
+                                                                        {
+                                                                                "type": "Person",
+                                                                                "text": "Scientists"
+                                                                        }
+                                                                ]
+                                                        },
+                                                        {
+                                                                "text": "IBM",
+                                                                "entities": [
+                                                                        {
+                                                                                "type": "Organization",
+                                                                                "text": "IBM"
+                                                                        }
+                                                                ]
+                                                        }
+                                                ]
+                                        }
+                                ],
+                                "keywords": [],
+                                "contextos": " A tecnologia física ciência e tecnologia de computação e computação consumidor eletrônica câmera e telescópios equipamento fotográfico"
+                        },
+                        {
+                                "_id": "03d4a116165197e70474524bb1fd2132",
+                                "_rev": "1-72c1f96d7ef40ae1aa66eedd90702814",
+                                "source": "twitter",
+                                "date": "Wed Jul 19 18:53:18 +0000 2017",
+                                "author": "Jacqui Shawley",
+                                "link": "https://twitter.com/jacquishawley/status/887747188826284033",
+                                "text": "RT @coastw: How to assemble the most advanced mainframe ever -- in 120 seconds @IBM @IBMSystems #trustIBMz #encryption #mainframe ",
+                                "lang": "en",
+                                "english": "RT @coastw: How to assemble the most advanced mainframe ever -- in 120 seconds @IBM @IBMSystems #trustIBMz #encryption #mainframe ",
+                                "portuguese": "@coastw RT: Como montar o computador mais avançado já -- em 120 seconds @IBMSystems @IBM #trustIBMz #encryption #mainframe ",
+                                "sentiment": {
+                                        "score": 0,
+                                        "label": "neutral"
+                                },
+                                "categories": [
+                                        {
+                                                "score": 0.429413,
+                                                "label": "/technology and computing/hardware/computer"
+                                        },
+                                        {
+                                                "score": 0.330847,
+                                                "label": "/technology and computing/operating systems"
+                                        },
+                                        {
+                                                "score": 0.30569,
+                                                "label": "/technology and computing"
+                                        }
+                                ],
+                                "relations": [],
+                                "keywords": [
+                                        {
+                                                "text": "@coastw rt",
+                                                "relevance": 0.987671
+                                        }
+                                ],
+                                "contextos": " Tecnologia e computação de hardware do computador de tecnologia e tecnologia sistemas operacionais de computação e computação"
+                        },
+                        {
+                                "_id": "288bd57d990c6ccfe3d2bfb906f1fdc6",
+                                "_rev": "1-a394419331aaf02d50b738ca917cf50c",
+                                "source": "facebook",
+                                "date": "2017-03-02",
+                                "author": "IBM",
+                                "link": "",
+                                "text": "4 minute read: How this 29-year-old with no coding experience landed her dream job with IBM Watson.",
+                                "lang": "en",
+                                "english": "4 minute read: How this 29-year-old with no coding experience landed her dream job with IBM Watson.",
+                                "portuguese": "4 minute li: Como este de 29 anos sem experiência de codificação pousou seu emprego dos sonhos com o IBM Watson.",
+                                "sentiment": {
+                                        "score": 0,
+                                        "label": "neutral"
+                                },
+                                "categories": [
+                                        {
+                                                "score": 0.484626,
+                                                "label": "/law, govt and politics/law enforcement/police"
+                                        },
+                                        {
+                                                "score": 0.306854,
+                                                "label": "/education/school"
+                                        },
+                                        {
+                                                "score": 0.29857,
+                                                "label": "/education/graduate school/college"
+                                        }
+                                ],
+                                "relations": [],
+                                "keywords": [
+                                        {
+                                                "text": "IBM Watson",
+                                                "relevance": 0.979166
+                                        }
+                                ],
+                                "contextos": " Lei, governo e política na faculdade faculdade educação escolar educação polícia polícia"
+                        },
+                        {
+                                "_id": "288bd57d990c6ccfe3d2bfb906f21b8f",
+                                "_rev": "1-048c6b827a372a23a9b0c0da2c971f81",
+                                "source": "facebook",
+                                "date": "2017-03-01",
+                                "author": "IBMBrasil",
+                                "link": "",
+                                "text": "O que será que o IBM Watson analisou da personalidade do pessoal de #BigBangTheory? A gente aposta que tem bastante bazinga! 😉",
+                                "lang": "pt",
+                                "english": "What is that IBM Watson analyzed the personality of personal #BigBangTheory ? We bet that has enough bazinga ! ",
+                                "portuguese": "O que será que o IBM Watson analisou da personalidade do pessoal de #BigBangTheory? A gente aposta que tem bastante bazinga! 😉",
+                                "sentiment": {
+                                        "score": 0.798832,
+                                        "label": "positive"
+                                },
+                                "categories": [
+                                        {
+                                                "score": 0.704997,
+                                                "label": "/sports/horse racing"
+                                        },
+                                        {
+                                                "score": 0.358535,
+                                                "label": "/science/physics"
+                                        },
+                                        {
+                                                "score": 0.166252,
+                                                "label": "/technology and computing/computer security/antivirus and malware"
+                                        }
+                                ],
+                                "relations": [],
+                                "keywords": [
+                                        {
+                                                "text": "IBM Watson",
+                                                "relevance": 0.965354
+                                        }
+                                ],
+                                "contextos": " Cavalo esportivo correndo segurança tecnologia física ciência e computação de antivírus e malware"
+                        },
+                        {
+                                "_id": "47a37662bea959f49ddf7fd3b8b45a9f",
+                                "_rev": "1-c00b89bd894de6c0c9bb87c05262108a",
+                                "source": "nodecrawler",
+                                "profile": "olhardigital",
+                                "link": "https://olhardigital.uol.com.br/fique_seguro/noticia/ex-funcionario-da-ibm-roubou-segredos-da-empresa-a-pedido-do-governo-chines/68470",
+                                "date": "2017-05-23",
+                                "author": "Redação Olhar Digital",
+                                "title": "Ex-funcionário da IBM roubou segredos da empresa a pedido do governo chinês",
+                                "text": "Um ex-funcionário da IBM se declarou culpado de roubar segredos e espionar a empresa. Xu Jiaqiang afirmou no fim da semana passada que roubou as informações \"para beneficiar a Comissão Nacional de Saúde e Planejamento Familiar da República Popular da China\" durante o período em que trabalhou na empresa, de 2010 a 2014.\nJiaqiang é chinês e foi descoberto pelo FBI quando tentou vender o código-fonte do sistema de arquivos em cluster para agentes disfarçados de investidores do setor.\nParte do software roubado incluía demonstrações de como ele consegue acelerar os processos, distribuindo-os a diferentes servidores. Questionado, o homem afirmou que dava para saber que o programa era roubado da IBM, mas que seria possível usar scripts para mascarar suas origens.\nEsta não é a primeira espionagem econômica realizada por chineses em empresas dos Estados Unidos. Nos últimos anos, o Departamento de Justiça dos EUA acusou uma série de hackers de tentarem roubar dados de diversas empresas em setores como energia e advocacia.\nApós a confissão, o chinês será condenado. A data prevista para que isso aconteça é 13 de outubro deste ano.\nQuestionada pela Fortune, a IBM ainda não se manifestou.",
+                                "lang": "pt",
+                                "english": "A former IBM pleaded guilty to stealing secrets and spy on the company. Xu Jiaqiang said at the end of last week that stole the information \"to benefit the National Commission of Health and Family Planning of the People's Republic of China\" during the period in which he worked in the company, 2010 a 2014.\nJiaqiang is Chinese and was discovered by the FBI when he tried to sell the code of clustered file system for agents disguised as investors in the sector.\nPart of stolen software included demonstrations as he can speed up processes, distributing them to different servers. Asked, the man said was to know that the program was stolen from IBM, but that it would be possible to use scripts to mask their origins.\nThis is not the first economic espionage carried out by Chinese companies in the United States. In recent years, the U.S. Justice Department accused a series of hackers trying to steal data from multiple companies in sectors such as energy and law.\nAfter the confession, the Chinese will be convicted. The target date for this to happen is October 13 this year.\nAsked by Fortune, IBM has not yet expressed.",
+                                "portuguese": "Um ex-funcionário da IBM se declarou culpado de roubar segredos e espionar a empresa. Xu Jiaqiang afirmou no fim da semana passada que roubou as informações \"para beneficiar a Comissão Nacional de Saúde e Planejamento Familiar da República Popular da China\" durante o período em que trabalhou na empresa, de 2010 a 2014.\nJiaqiang é chinês e foi descoberto pelo FBI quando tentou vender o código-fonte do sistema de arquivos em cluster para agentes disfarçados de investidores do setor.\nParte do software roubado incluía demonstrações de como ele consegue acelerar os processos, distribuindo-os a diferentes servidores. Questionado, o homem afirmou que dava para saber que o programa era roubado da IBM, mas que seria possível usar scripts para mascarar suas origens.\nEsta não é a primeira espionagem econômica realizada por chineses em empresas dos Estados Unidos. Nos últimos anos, o Departamento de Justiça dos EUA acusou uma série de hackers de tentarem roubar dados de diversas empresas em setores como energia e advocacia.\nApós a confissão, o chinês será condenado. A data prevista para que isso aconteça é 13 de outubro deste ano.\nQuestionada pela Fortune, a IBM ainda não se manifestou.",
+                                "sentiment": {
+                                        "score": -0.520829,
+                                        "label": "negative"
+                                },
+                                "categories": [
+                                        {
+                                                "score": 0.577732,
+                                                "label": "/society/crime/personal offense/homicide"
+                                        },
+                                        {
+                                                "score": 0.449614,
+                                                "label": "/society/crime/property crime/larceny"
+                                        },
+                                        {
+                                                "score": 0.439448,
+                                                "label": "/law, govt and politics/government"
+                                        }
+                                ],
+                                "relations": [
+                                        {
+                                                "type": "agentOf",
+                                                "sentence": "A former IBM pleaded guilty to stealing secrets and spy on the company.",
+                                                "score": 0.932838,
+                                                "arguments": [
+                                                        {
+                                                                "text": "IBM",
+                                                                "entities": [
+                                                                        {
+                                                                                "type": "Organization",
+                                                                                "text": "IBM"
+                                                                        }
+                                                                ]
+                                                        },
+                                                        {
+                                                                "text": "pleaded guilty",
+                                                                "entities": [
+                                                                        {
+                                                                                "type": "EventLegal",
+                                                                                "text": "pleaded guilty"
+                                                                        }
+                                                                ]
+                                                        }
+                                                ]
+                                        },
+                                        {
+                                                "type": "agentOf",
+                                                "sentence": "Asked, the man said was to know that the program was stolen from IBM, but that it would be possible to use scripts to mask their origins.",
+                                                "score": 0.987313,
+                                                "arguments": [
+                                                        {
+                                                                "text": "man",
+                                                                "entities": [
+                                                                        {
+                                                                                "type": "Person",
+                                                                                "text": "man"
+                                                                        }
+                                                                ]
+                                                        },
+                                                        {
+                                                                "text": "said",
+                                                                "entities": [
+                                                                        {
+                                                                                "type": "EventCommunication",
+                                                                                "text": "said"
+                                                                        }
+                                                                ]
+                                                        }
+                                                ]
+                                        },
+                                        {
+                                                "type": "agentOf",
+                                                "sentence": "Asked, the man said was to know that the program was stolen from IBM, but that it would be possible to use scripts to mask their origins.",
+                                                "score": 0.665527,
+                                                "arguments": [
+                                                        {
+                                                                "text": "man",
+                                                                "entities": [
+                                                                        {
+                                                                                "type": "Person",
+                                                                                "text": "man"
+                                                                        }
+                                                                ]
+                                                        },
+                                                        {
+                                                                "text": "stolen",
+                                                                "entities": [
+                                                                        {
+                                                                                "type": "Crime",
+                                                                                "text": "stolen"
+                                                                        }
+                                                                ]
+                                                        }
+                                                ]
+                                        },
+                                        {
+                                                "type": "partOf",
+                                                "sentence": "This is not the first economic espionage carried out by Chinese companies in the United States.",
+                                                "score": 0.76413,
+                                                "arguments": [
+                                                        {
+                                                                "text": "companies",
+                                                                "entities": [
+                                                                        {
+                                                                                "type": "Organization",
+                                                                                "text": "companies"
+                                                                        }
+                                                                ]
+                                                        },
+                                                        {
+                                                                "text": "Chinese",
+                                                                "entities": [
+                                                                        {
+                                                                                "type": "GeopoliticalEntity",
+                                                                                "text": "Chinese"
+                                                                        }
+                                                                ]
+                                                        }
+                                                ]
+                                        },
+                                        {
+                                                "type": "locatedAt",
+                                                "sentence": "This is not the first economic espionage carried out by Chinese companies in the United States.",
+                                                "score": 0.648374,
+                                                "arguments": [
+                                                        {
+                                                                "text": "companies",
+                                                                "entities": [
+                                                                        {
+                                                                                "type": "Organization",
+                                                                                "text": "companies"
+                                                                        }
+                                                                ]
+                                                        },
+                                                        {
+                                                                "text": "United States",
+                                                                "entities": [
+                                                                        {
+                                                                                "type": "GeopoliticalEntity",
+                                                                                "text": "United States"
+                                                                        }
+                                                                ]
+                                                        }
+                                                ]
+                                        },
+                                        {
+                                                "type": "timeOf",
+                                                "sentence": "In recent years, the U.S. Justice Department accused a series of hackers trying to steal data from multiple companies in sectors such as energy and law.",
+                                                "score": 0.628178,
+                                                "arguments": [
+                                                        {
+                                                                "text": "recent years",
+                                                                "entities": [
+                                                                        {
+                                                                                "type": "Date",
+                                                                                "text": "recent years"
+                                                                        }
+                                                                ]
+                                                        },
+                                                        {
+                                                                "text": "accused",
+                                                                "entities": [
+                                                                        {
+                                                                                "type": "EventCommunication",
+                                                                                "text": "accused"
+                                                                        }
+                                                                ]
+                                                        }
+                                                ]
+                                        },
+                                        {
+                                                "type": "partOf",
+                                                "sentence": "In recent years, the U.S. Justice Department accused a series of hackers trying to steal data from multiple companies in sectors such as energy and law.",
+                                                "score": 0.988595,
+                                                "arguments": [
+                                                        {
+                                                                "text": "Justice Department",
+                                                                "entities": [
+                                                                        {
+                                                                                "type": "Organization",
+                                                                                "text": "Justice Department"
+                                                                        }
+                                                                ]
+                                                        },
+                                                        {
+                                                                "text": "U.S.",
+                                                                "entities": [
+                                                                        {
+                                                                                "type": "GeopoliticalEntity",
+                                                                                "text": "U.S."
+                                                                        }
+                                                                ]
+                                                        }
+                                                ]
+                                        },
+                                        {
+                                                "type": "agentOf",
+                                                "sentence": "In recent years, the U.S. Justice Department accused a series of hackers trying to steal data from multiple companies in sectors such as energy and law.",
+                                                "score": 0.988394,
+                                                "arguments": [
+                                                        {
+                                                                "text": "Justice Department",
+                                                                "entities": [
+                                                                        {
+                                                                                "type": "Organization",
+                                                                                "text": "Justice Department"
+                                                                        }
+                                                                ]
+                                                        },
+                                                        {
+                                                                "text": "accused",
+                                                                "entities": [
+                                                                        {
+                                                                                "type": "EventCommunication",
+                                                                                "text": "accused"
+                                                                        }
+                                                                ]
+                                                        }
+                                                ]
+                                        },
+                                        {
+                                                "type": "agentOf",
+                                                "sentence": "After the confession, the Chinese will be convicted.",
+                                                "score": 0.814854,
+                                                "arguments": [
+                                                        {
+                                                                "text": "Chinese",
+                                                                "entities": [
+                                                                        {
+                                                                                "type": "GeopoliticalEntity",
+                                                                                "text": "Chinese"
+                                                                        }
+                                                                ]
+                                                        },
+                                                        {
+                                                                "text": "convicted",
+                                                                "entities": [
+                                                                        {
+                                                                                "type": "EventLegal",
+                                                                                "text": "convicted"
+                                                                        }
+                                                                ]
+                                                        }
+                                                ]
+                                        },
+                                        {
+                                                "type": "agentOf",
+                                                "sentence": "Asked by Fortune, IBM has not yet expressed.",
+                                                "score": 0.79608,
+                                                "arguments": [
+                                                        {
+                                                                "text": "Fortune",
+                                                                "entities": [
+                                                                        {
+                                                                                "type": "Organization",
+                                                                                "text": "Fortune"
+                                                                        }
+                                                                ]
+                                                        },
+                                                        {
+                                                                "text": "Asked",
+                                                                "entities": [
+                                                                        {
+                                                                                "type": "EventCommunication",
+                                                                                "text": "Asked"
+                                                                        }
+                                                                ]
+                                                        }
+                                                ]
+                                        },
+                                        {
+                                                "type": "agentOf",
+                                                "sentence": "Xu Jiaqiang said at the end of last week that stole the information \"to benefit the National Commission of Health and Family Planning of the People's Republic of China\" during the period in which he worked in the company, 2010 a 2014.",
+                                                "score": 0.996382,
+                                                "arguments": [
+                                                        {
+                                                                "text": "Xu Jiaqiang",
+                                                                "entities": [
+                                                                        {
+                                                                                "type": "Person",
+                                                                                "text": "Xu Jiaqiang"
+                                                                        }
+                                                                ]
+                                                        },
+                                                        {
+                                                                "text": "said",
+                                                                "entities": [
+                                                                        {
+                                                                                "type": "EventCommunication",
+                                                                                "text": "said"
+                                                                        }
+                                                                ]
+                                                        }
+                                                ]
+                                        },
+                                        {
+                                                "type": "timeOf",
+                                                "sentence": "Xu Jiaqiang said at the end of last week that stole the information \"to benefit the National Commission of Health and Family Planning of the People's Republic of China\" during the period in which he worked in the company, 2010 a 2014.",
+                                                "score": 0.620061,
+                                                "arguments": [
+                                                        {
+                                                                "text": "last week",
+                                                                "entities": [
+                                                                        {
+                                                                                "type": "Date",
+                                                                                "text": "last week"
+                                                                        }
+                                                                ]
+                                                        },
+                                                        {
+                                                                "text": "said",
+                                                                "entities": [
+                                                                        {
+                                                                                "type": "EventCommunication",
+                                                                                "text": "said"
+                                                                        }
+                                                                ]
+                                                        }
+                                                ]
+                                        },
+                                        {
+                                                "type": "partOf",
+                                                "sentence": "Xu Jiaqiang said at the end of last week that stole the information \"to benefit the National Commission of Health and Family Planning of the People's Republic of China\" during the period in which he worked in the company, 2010 a 2014.",
+                                                "score": 0.677901,
+                                                "arguments": [
+                                                        {
+                                                                "text": "People's Republic of China",
+                                                                "entities": [
+                                                                        {
+                                                                                "type": "Organization",
+                                                                                "text": "People's Republic of China"
+                                                                        }
+                                                                ]
+                                                        },
+                                                        {
+                                                                "text": "National Commission of Health and Family Planning",
+                                                                "entities": [
+                                                                        {
+                                                                                "type": "Organization",
+                                                                                "text": "National Commission of Health and Family Planning"
+                                                                        }
+                                                                ]
+                                                        }
+                                                ]
+                                        },
+                                        {
+                                                "type": "employedBy",
+                                                "sentence": "Xu Jiaqiang said at the end of last week that stole the information \"to benefit the National Commission of Health and Family Planning of the People's Republic of China\" during the period in which he worked in the company, 2010 a 2014.",
+                                                "score": 0.433493,
+                                                "arguments": [
+                                                        {
+                                                                "text": "he",
+                                                                "entities": [
+                                                                        {
+                                                                                "type": "Person",
+                                                                                "text": "Xu Jiaqiang"
+                                                                        }
+                                                                ]
+                                                        },
+                                                        {
+                                                                "text": "company",
+                                                                "entities": [
+                                                                        {
+                                                                                "type": "Organization",
+                                                                                "text": "National Commission of Health and Family Planning"
+                                                                        }
+                                                                ]
+                                                        }
+                                                ]
+                                        },
+                                        {
+                                                "type": "agentOf",
+                                                "sentence": "Jiaqiang is Chinese and was discovered by the FBI when he tried to sell the code of clustered file system for agents disguised as investors in the sector.",
+                                                "score": 0.519224,
+                                                "arguments": [
+                                                        {
+                                                                "text": "Jiaqiang",
+                                                                "entities": [
+                                                                        {
+                                                                                "type": "Person",
+                                                                                "text": "Xu Jiaqiang"
+                                                                        }
+                                                                ]
+                                                        },
+                                                        {
+                                                                "text": "sell",
+                                                                "entities": [
+                                                                        {
+                                                                                "type": "Crime",
+                                                                                "text": "sell"
+                                                                        }
+                                                                ]
+                                                        }
+                                                ]
+                                        },
+                                        {
+                                                "type": "agentOf",
+                                                "sentence": "Jiaqiang is Chinese and was discovered by the FBI when he tried to sell the code of clustered file system for agents disguised as investors in the sector.",
+                                                "score": 0.953643,
+                                                "arguments": [
+                                                        {
+                                                                "text": "he",
+                                                                "entities": [
+                                                                        {
+                                                                                "type": "Person",
+                                                                                "text": "Xu Jiaqiang"
+                                                                        }
+                                                                ]
+                                                        },
+                                                        {
+                                                                "text": "sell",
+                                                                "entities": [
+                                                                        {
+                                                                                "type": "Crime",
+                                                                                "text": "sell"
+                                                                        }
+                                                                ]
+                                                        }
+                                                ]
+                                        },
+                                        {
+                                                "type": "affectedBy",
+                                                "sentence": "Jiaqiang is Chinese and was discovered by the FBI when he tried to sell the code of clustered file system for agents disguised as investors in the sector.",
+                                                "score": 0.378928,
+                                                "arguments": [
+                                                        {
+                                                                "text": "agents",
+                                                                "entities": [
+                                                                        {
+                                                                                "type": "Person",
+                                                                                "text": "agents"
+                                                                        }
+                                                                ]
+                                                        },
+                                                        {
+                                                                "text": "sell",
+                                                                "entities": [
+                                                                        {
+                                                                                "type": "Crime",
+                                                                                "text": "sell"
+                                                                        }
+                                                                ]
+                                                        }
+                                                ]
+                                        },
+                                        {
+                                                "type": "partOfMany",
+                                                "sentence": "Part of stolen software included demonstrations as he can speed up processes, distributing them to different servers.",
+                                                "score": 0.516878,
+                                                "arguments": [
+                                                        {
+                                                                "text": "he",
+                                                                "entities": [
+                                                                        {
+                                                                                "type": "Person",
+                                                                                "text": "Xu Jiaqiang"
+                                                                        }
+                                                                ]
+                                                        },
+                                                        {
+                                                                "text": "them",
+                                                                "entities": [
+                                                                        {
+                                                                                "type": "Person",
+                                                                                "text": "them"
+                                                                        }
+                                                                ]
+                                                        }
+                                                ]
+                                        },
+                                        {
+                                                "type": "agentOf",
+                                                "sentence": "Asked, the man said was to know that the program was stolen from IBM, but that it would be possible to use scripts to mask their origins.",
+                                                "score": 0.435969,
+                                                "arguments": [
+                                                        {
+                                                                "text": "man",
+                                                                "entities": [
+                                                                        {
+                                                                                "type": "Person",
+                                                                                "text": "man"
+                                                                        }
+                                                                ]
+                                                        },
+                                                        {
+                                                                "text": "Asked",
+                                                                "entities": [
+                                                                        {
+                                                                                "type": "EventCommunication",
+                                                                                "text": "Asked"
+                                                                        }
+                                                                ]
+                                                        }
+                                                ]
+                                        }
+                                ],
+                                "keywords": [
+                                        {
+                                                "text": "Planejamento Familiar",
+                                                "relevance": 0.99879
+                                        },
+                                        {
+                                                "text": "Comissão Nacional",
+                                                "relevance": 0.991608
+                                        },
+                                        {
+                                                "text": "República Popular",
+                                                "relevance": 0.991506
+                                        }
+                                ],
+                                "contextos": " Sociedade crime pessoal crime homicídio sociedade crime de crime de furto da lei, o governo diz e política"
+                        }
+                ]
+        },
+        {
+                "entity": "apple",
+                "data": [{
+                                "_id": "id-1-twitter-apple",
+                                "_rev": "1-ca6641f13efbedc22a665e8f551d126d",
+                                "source": "twitter",
+                                "date": "Wed Jul 19 18:54:01 +0000 2017",
+                                "author": "teste",
+                                "link": "https://teste.com",
+                                "text": "testando ibm acelerando solucao",
+                                "lang": "en",
+                                "english": "testing ibm  ",
+                                "portuguese": "testando ibm acelerando solucao ",
+                                "sentiment": {
+                                        "score": 90,
+                                        "label": "positive"
+                                },
+                                "categories": [],
+                                "relations": [
+                                        {
+                                                "type": "employedBy",
+                                                "sentence": "EVRY and IBM partner to accelerate cloud adoption",
+                                                "score": 0.4,
+                                                "arguments": [
+                                                        {
+                                                                "text": "partner",
+                                                                "entities": [
+                                                                        {
+                                                                                "type": "Person",
+                                                                                "text": "partner"
+                                                                        }
+                                                                ]
+                                                        },
+                                                        {
+                                                                "text": "IBM-relevance",
+                                                                "entities": [
+                                                                        {
+                                                                                "type": "Organization",
+                                                                                "text": "IBM-relevance"
+                                                                        }
+                                                                ]
+                                                        }
+                                                ]
+                                        }
+                                ],
+                                "keywords": [
+                                        {
+                                                "text": "parceiro ibm",
+                                                "relevance": 0.90
+                                        },
+                                        {
+                                                "text": "keyword1",
+                                                "relevance": 0.7
+                                        }
+                                ],
+                                "contextos": " xxxxxxx"
+                        }]
+        }
+]

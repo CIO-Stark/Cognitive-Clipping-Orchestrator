@@ -1,0 +1,33 @@
+{
+  "name": "orchestrator",
+  "version": "1.0.0",
+  "description": "Cognitive Clipping Orchestrator",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "./node_modules/.bin/mocha"
+  },
+  "author": "Guilherme Oka (goka@br.ibm.com)",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "cfenv": "^1.0.4",
+    "compression": "^1.6.2",
+    "cors": "^2.8.1",
+    "dotenv": "^4.0.0",
+    "express": "^4.14.1",
+    "html-entities": "^1.2.1",
+    "jsonwebtoken": "^7.4.2",
+    "mocha": "^3.5.0",
+    "moment": "^2.18.1",
+    "nano": "^6.4.0",
+    "path": "^0.12.7",
+    "request": "^2.80.0",
+    "request-promise": "^4.1.1",
+    "should": "^11.2.1",
+    "socket.io": "^2.0.3",
+    "vcap_services": "^0.2.0",
+    "watson-developer-cloud": "^2.22.2",
+    "xml2js": "^0.4.19"
+  }
+}

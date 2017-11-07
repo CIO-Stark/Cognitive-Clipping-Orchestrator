@@ -1,0 +1,323 @@
+
+<!doctype html>
+<html>
+<head>
+  <title>Network | Basic usage</title>
+
+  <script type="text/javascript" src="vis.js"></script>
+  <link href="http://visjs.org/dist/vis-network.min.css" rel="stylesheet" type="text/css" />
+
+  <style type="text/css">
+    #mynetwork {
+      width: 800px;
+      height: 800px;
+      border: 1px solid lightgray;
+    }
+  </style>
+</head>
+<body>
+
+<p>
+  Create a simple network with some nodes and edges.
+</p>
+
+<div id="mynetwork"></div>
+
+<script type="text/javascript">
+
+
+
+var post = {
+    "status": true,
+     "data": {
+      "edges": [
+         {
+            "from": "ibm",
+            "to": "id-1-twitter-ibm",
+            "type": "entity"
+         },
+         {
+            "from": "ibm",
+            "to": "id-2-twitter-ibm",
+            "type": "entity"
+         },
+         {
+            "from": "apple",
+            "to": "id-1-twitter-apple",
+            "type": "entity"
+         },
+         {
+            "from": "id-1-twitter-ibm",
+            "to": "employedBy_Person_partner",
+            "type": "relations"
+         },
+         {
+            "from": "id-1-twitter-apple",
+            "to": "employedBy_Person_partner",
+            "type": "relations"
+         },
+         {
+            "from": "id-1-twitter-ibm",
+            "to": "employedBy_Organization_IBM-relevance",
+            "type": "relations"
+         },
+         {
+            "from": "id-2-twitter-ibm",
+            "to": "employedBy_Organization_IBM-relevance",
+            "type": "relations"
+         },
+         {
+            "from": "id-1-twitter-apple",
+            "to": "employedBy_Organization_IBM-relevance",
+            "type": "relations"
+         },
+         {
+            "from": "id-2-twitter-ibm",
+            "to": "employedBy_Person_Scientists",
+            "type": "relations"
+         },
+         {
+            "from": "id-1-twitter-ibm",
+            "to": "parceiro ibm",
+            "type": "keyword"
+         },
+         {
+            "from": "id-2-twitter-ibm",
+            "to": "parceiro ibm",
+            "type": "keyword"
+         },
+         {
+            "from": "id-1-twitter-apple",
+            "to": "parceiro ibm",
+            "type": "keyword"
+         },
+         {
+            "from": "id-2-twitter-ibm",
+            "to": "Pensamentos @DavidSeaburg",
+            "type": "keyword"
+         },
+         {
+            "from": "id-1-twitter-apple",
+            "to": "keyword1",
+            "type": "keyword"
+         }
+      ],
+      "nodes": [
+         {
+            "id": "ibm",
+            "label": "ibm",
+            "level": 0
+         },
+         {
+            "id": "id-1-twitter-ibm",
+            "label": "twitter",
+            "group": "twitter",
+            "level": 1,
+            "refersToEntity": "ibm",
+            "sentiment": {
+               "score": 0,
+               "label": "neutral"
+            }
+         },
+         {
+            "id": "id-2-twitter-ibm",
+            "label": "twitter",
+            "group": "twitter",
+            "level": 1,
+            "refersToEntity": "ibm",
+            "sentiment": {
+               "score": -0.52829,
+               "label": "negative"
+            }
+         },
+         {
+            "id": "apple",
+            "label": "apple",
+            "level": 0
+         },
+         {
+            "id": "id-1-twitter-apple",
+            "label": "twitter",
+            "group": "twitter",
+            "level": 1,
+            "refersToEntity": "apple",
+            "sentiment": {
+               "score": 90,
+               "label": "positive"
+            }
+         },
+         {
+            "id": "employedBy_Person_partner",
+            "label": "employedBy_Person_partner",
+            "group": "relations",
+            "level": 2
+         },
+         {
+            "id": "employedBy_Organization_IBM-relevance",
+            "label": "employedBy_Organization_IBM-relevance",
+            "group": "relations",
+            "level": 2
+         },
+         {
+            "id": "employedBy_Person_Scientists",
+            "label": "employedBy_Person_Scientists",
+            "group": "relations",
+            "level": 2
+         },
+         {
+            "id": "parceiro ibm",
+            "label": "parceiro ibm",
+            "group": "keywords",
+            "level": 2
+         },
+         {
+            "id": "Pensamentos @DavidSeaburg",
+            "label": "Pensamentos @DavidSeaburg",
+            "group": "keywords",
+            "level": 2
+         },
+         {
+            "id": "keyword1",
+            "label": "keyword1",
+            "group": "keywords",
+            "level": 2
+         }
+      ]
+   ,
+        "nodesLength": 60,
+        "config": {
+            "layout": {
+                "randomSeed": 3,
+                "improvedLayout": true,
+                "hierarchical": {
+                    "enabled": false,
+                    "levelSeparation": 150,
+                    "nodeSpacing": 100,
+                    "treeSpacing": 200,
+                    "blockShifting": true,
+                    "edgeMinimization": true,
+                    "parentCentralization": true,
+                    "direction": "UD",
+                    "sortMethod": "hubsize"
+                }
+            },
+            "groups": {
+                "entity": {
+                    "image": "entityIcon",
+                    "shape": "image",
+                    "label": "hex color",
+                    "color": "#b8c1c1 "
+                },
+                "facebook": {
+                    "image": "facebookIcon",
+                    "shape": "image",
+                    "label": "hex color",
+                    "color": "#b8c1c1 "
+                },
+                "twitter": {
+                    "image": "twitterIcon",
+                    "shape": "image",
+                    "label": "hex color",
+                    "color": "#b8c1c1 "
+                },
+                "file": {
+                    "image": "fileIcon",
+                    "shape": "image",
+                    "label": "hex color",
+                    "color": "#b8c1c1 "
+                },
+                "nodecrawler": {
+                    "image": "articleIcon",
+                    "shape": "image",
+                    "label": "hex color",
+                    "color": "#b8c1c1 "
+                },
+                "company": {
+                    "image": "companyIcon",
+                    "shape": "image",
+                    "label": "hex color",
+                    "color": "#b8c1c1 "
+                },
+                "organization": {
+                    "image": "organizationIcon",
+                    "shape": "image",
+                    "label": "hex color",
+                    "color": "#b8c1c1 "
+                },
+                "person": {
+                    "image": "personIcon",
+                    "shape": "image",
+                    "label": "hex color",
+                    "color": "#b8c1c1 "
+                },
+                "keyword": {
+                    "image": "keywordIcon",
+                    "shape": "image",
+                    "label": "hex color",
+                    "color": "#b8c1c1 "
+                }
+            },
+            "interaction": {
+                "navigationButtons": true,
+                "keyboard": true
+            },
+            "physics": false
+        }
+    }
+};
+
+  var i,
+    s,
+    N = 500,
+    E = 500,
+    g = {
+      nodes: [],
+      edges: []
+    };
+// Generate a random graph:
+for (i = 0; i < N; i++)
+  g.nodes.push({
+    id: 'n' + i,
+    label: 'Node ' + i
+    
+  });
+for (i = 0; i < E; i++)
+  g.edges.push({
+    from: 'n' + (Math.random() * N | 0),
+    to: 'n' + (Math.random() * N | 0),
+    
+  });
+
+  // create an array with nodes
+  var nodes = new vis.DataSet(post.data.nodes);
+  var nodes = new vis.DataSet(g.nodes);
+
+  // create an array with edges
+  var edges = new vis.DataSet(post.data.edges);
+  var edges = new vis.DataSet(g.edges);
+
+  // create a network
+  var container = document.getElementById('mynetwork');
+  var data = {
+    nodes: nodes,
+    edges: edges
+  };
+  var options = {
+        nodes: {
+          shape: 'dot',
+          scaling: {
+            customScalingFunction: function (min,max,total,value) {
+              return value/total;
+            },
+            min:20,
+            max:200
+          }
+        },
+        layout: {"improvedLayout": false}
+      };
+  var network = new vis.Network(container, data, options);
+</script>
+
+
+</body>
+</html>
